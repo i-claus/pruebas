@@ -15,7 +15,7 @@ final class SpotifyViewController: UICollectionViewController {
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     
     fileprivate var searches = [SpotifySearchResults]()
-    //fileprivate let flickr = Flickr()
+    
     fileprivate let itemsPerRow: CGFloat = 3
 }
 
