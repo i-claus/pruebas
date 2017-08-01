@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48C9336C1F2FE8D600DAC629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9336B1F2FE8D600DAC629 /* AppDelegate.swift */; };
+		48C9336E1F2FE8D600DAC629 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9336D1F2FE8D600DAC629 /* MainViewController.swift */; };
+		48C933711F2FE8D600DAC629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C9336F1F2FE8D600DAC629 /* Main.storyboard */; };
+		48C933731F2FE8D600DAC629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C933721F2FE8D600DAC629 /* Assets.xcassets */; };
+		48C933761F2FE8D600DAC629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C933741F2FE8D600DAC629 /* LaunchScreen.storyboard */; };
+		48C933811F2FE8D600DAC629 /* AppYapoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933801F2FE8D600DAC629 /* AppYapoTests.swift */; };
+		48C9338C1F2FE8D600DAC629 /* AppYapoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9338B1F2FE8D600DAC629 /* AppYapoUITests.swift */; };
+		48C9339D1F2FECE100DAC629 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9339A1F2FECE100DAC629 /* SpotifyAudioPlayback.framework */; };
+		48C9339E1F2FECE100DAC629 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9339B1F2FECE100DAC629 /* SpotifyAuthentication.framework */; };
+		48C9339F1F2FECE100DAC629 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C9339C1F2FECE100DAC629 /* SpotifyMetadata.framework */; };
+		48C933A51F3016EF00DAC629 /* SpotifySearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933A41F3016EF00DAC629 /* SpotifySearchResults.swift */; };
+		48C933A71F30179300DAC629 /* SpotifyPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933A61F30179300DAC629 /* SpotifyPhotoCell.swift */; };
+		48C933A91F3018C400DAC629 /* SpotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933A81F3018C400DAC629 /* SpotifyViewController.swift */; };
+		48C933AB1F301A8300DAC629 /* SpotifyPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933AA1F301A8300DAC629 /* SpotifyPhoto.swift */; };
+		48C933AD1F302A8900DAC629 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C933AC1F302A8900DAC629 /* Spotify.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48C9337D1F2FE8D600DAC629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C933601F2FE8D600DAC629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C933671F2FE8D600DAC629;
+			remoteInfo = AppYapo;
+		};
+		48C933881F2FE8D600DAC629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C933601F2FE8D600DAC629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C933671F2FE8D600DAC629;
+			remoteInfo = AppYapo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48C933681F2FE8D600DAC629 /* AppYapo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppYapo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C9336B1F2FE8D600DAC629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48C9336D1F2FE8D600DAC629 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		48C933701F2FE8D600DAC629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48C933721F2FE8D600DAC629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48C933751F2FE8D600DAC629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48C933771F2FE8D600DAC629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C9337C1F2FE8D600DAC629 /* AppYapoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppYapoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C933801F2FE8D600DAC629 /* AppYapoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppYapoTests.swift; sourceTree = "<group>"; };
+		48C933821F2FE8D600DAC629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C933871F2FE8D600DAC629 /* AppYapoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppYapoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C9338B1F2FE8D600DAC629 /* AppYapoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppYapoUITests.swift; sourceTree = "<group>"; };
+		48C9338D1F2FE8D600DAC629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C9339A1F2FECE100DAC629 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		48C9339B1F2FECE100DAC629 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		48C9339C1F2FECE100DAC629 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		48C933A01F2FEDF000DAC629 /* AppYapo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppYapo-Bridging-Header.h"; sourceTree = "<group>"; };
+		48C933A41F3016EF00DAC629 /* SpotifySearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySearchResults.swift; sourceTree = "<group>"; };
+		48C933A61F30179300DAC629 /* SpotifyPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPhotoCell.swift; sourceTree = "<group>"; };
+		48C933A81F3018C400DAC629 /* SpotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyViewController.swift; sourceTree = "<group>"; };
+		48C933AA1F301A8300DAC629 /* SpotifyPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPhoto.swift; sourceTree = "<group>"; };
+		48C933AC1F302A8900DAC629 /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48C933651F2FE8D600DAC629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C9339D1F2FECE100DAC629 /* SpotifyAudioPlayback.framework in Frameworks */,
+				48C9339F1F2FECE100DAC629 /* SpotifyMetadata.framework in Frameworks */,
+				48C9339E1F2FECE100DAC629 /* SpotifyAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C933791F2FE8D600DAC629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C933841F2FE8D600DAC629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48C9335F1F2FE8D600DAC629 = {
+			isa = PBXGroup;
+			children = (
+				48C9336A1F2FE8D600DAC629 /* AppYapo */,
+				48C9337F1F2FE8D600DAC629 /* AppYapoTests */,
+				48C9338A1F2FE8D600DAC629 /* AppYapoUITests */,
+				48C933691F2FE8D600DAC629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48C933691F2FE8D600DAC629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48C933681F2FE8D600DAC629 /* AppYapo.app */,
+				48C9337C1F2FE8D600DAC629 /* AppYapoTests.xctest */,
+				48C933871F2FE8D600DAC629 /* AppYapoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48C9336A1F2FE8D600DAC629 /* AppYapo */ = {
+			isa = PBXGroup;
+			children = (
+				48C933991F2FECBA00DAC629 /* Spotify Frameworks */,
+				48C9336B1F2FE8D600DAC629 /* AppDelegate.swift */,
+				48C9336D1F2FE8D600DAC629 /* MainViewController.swift */,
+				48C9336F1F2FE8D600DAC629 /* Main.storyboard */,
+				48C933721F2FE8D600DAC629 /* Assets.xcassets */,
+				48C933741F2FE8D600DAC629 /* LaunchScreen.storyboard */,
+				48C933771F2FE8D600DAC629 /* Info.plist */,
+				48C933A01F2FEDF000DAC629 /* AppYapo-Bridging-Header.h */,
+				48C933A41F3016EF00DAC629 /* SpotifySearchResults.swift */,
+				48C933A61F30179300DAC629 /* SpotifyPhotoCell.swift */,
+				48C933A81F3018C400DAC629 /* SpotifyViewController.swift */,
+				48C933AA1F301A8300DAC629 /* SpotifyPhoto.swift */,
+				48C933AC1F302A8900DAC629 /* Spotify.swift */,
+			);
+			path = AppYapo;
+			sourceTree = "<group>";
+		};
+		48C9337F1F2FE8D600DAC629 /* AppYapoTests */ = {
+			isa = PBXGroup;
+			children = (
+				48C933801F2FE8D600DAC629 /* AppYapoTests.swift */,
+				48C933821F2FE8D600DAC629 /* Info.plist */,
+			);
+			path = AppYapoTests;
+			sourceTree = "<group>";
+		};
+		48C9338A1F2FE8D600DAC629 /* AppYapoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48C9338B1F2FE8D600DAC629 /* AppYapoUITests.swift */,
+				48C9338D1F2FE8D600DAC629 /* Info.plist */,
+			);
+			path = AppYapoUITests;
+			sourceTree = "<group>";
+		};
+		48C933991F2FECBA00DAC629 /* Spotify Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48C9339A1F2FECE100DAC629 /* SpotifyAudioPlayback.framework */,
+				48C9339B1F2FECE100DAC629 /* SpotifyAuthentication.framework */,
+				48C9339C1F2FECE100DAC629 /* SpotifyMetadata.framework */,
+			);
+			name = "Spotify Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48C933671F2FE8D600DAC629 /* AppYapo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C933901F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapo" */;
+			buildPhases = (
+				48C933641F2FE8D600DAC629 /* Sources */,
+				48C933651F2FE8D600DAC629 /* Frameworks */,
+				48C933661F2FE8D600DAC629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppYapo;
+			productName = AppYapo;
+			productReference = 48C933681F2FE8D600DAC629 /* AppYapo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48C9337B1F2FE8D600DAC629 /* AppYapoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C933931F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapoTests" */;
+			buildPhases = (
+				48C933781F2FE8D600DAC629 /* Sources */,
+				48C933791F2FE8D600DAC629 /* Frameworks */,
+				48C9337A1F2FE8D600DAC629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48C9337E1F2FE8D600DAC629 /* PBXTargetDependency */,
+			);
+			name = AppYapoTests;
+			productName = AppYapoTests;
+			productReference = 48C9337C1F2FE8D600DAC629 /* AppYapoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48C933861F2FE8D600DAC629 /* AppYapoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C933961F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapoUITests" */;
+			buildPhases = (
+				48C933831F2FE8D600DAC629 /* Sources */,
+				48C933841F2FE8D600DAC629 /* Frameworks */,
+				48C933851F2FE8D600DAC629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48C933891F2FE8D600DAC629 /* PBXTargetDependency */,
+			);
+			name = AppYapoUITests;
+			productName = AppYapoUITests;
+			productReference = 48C933871F2FE8D600DAC629 /* AppYapoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48C933601F2FE8D600DAC629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Claus;
+				TargetAttributes = {
+					48C933671F2FE8D600DAC629 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M88MRTY7E4;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					48C9337B1F2FE8D600DAC629 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M88MRTY7E4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 48C933671F2FE8D600DAC629;
+					};
+					48C933861F2FE8D600DAC629 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M88MRTY7E4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 48C933671F2FE8D600DAC629;
+					};
+				};
+			};
+			buildConfigurationList = 48C933631F2FE8D600DAC629 /* Build configuration list for PBXProject "AppYapo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48C9335F1F2FE8D600DAC629;
+			productRefGroup = 48C933691F2FE8D600DAC629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48C933671F2FE8D600DAC629 /* AppYapo */,
+				48C9337B1F2FE8D600DAC629 /* AppYapoTests */,
+				48C933861F2FE8D600DAC629 /* AppYapoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48C933661F2FE8D600DAC629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C933761F2FE8D600DAC629 /* LaunchScreen.storyboard in Resources */,
+				48C933731F2FE8D600DAC629 /* Assets.xcassets in Resources */,
+				48C933711F2FE8D600DAC629 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C9337A1F2FE8D600DAC629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C933851F2FE8D600DAC629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48C933641F2FE8D600DAC629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C9336E1F2FE8D600DAC629 /* MainViewController.swift in Sources */,
+				48C933AB1F301A8300DAC629 /* SpotifyPhoto.swift in Sources */,
+				48C933AD1F302A8900DAC629 /* Spotify.swift in Sources */,
+				48C933A71F30179300DAC629 /* SpotifyPhotoCell.swift in Sources */,
+				48C933A51F3016EF00DAC629 /* SpotifySearchResults.swift in Sources */,
+				48C933A91F3018C400DAC629 /* SpotifyViewController.swift in Sources */,
+				48C9336C1F2FE8D600DAC629 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C933781F2FE8D600DAC629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C933811F2FE8D600DAC629 /* AppYapoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C933831F2FE8D600DAC629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C9338C1F2FE8D600DAC629 /* AppYapoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48C9337E1F2FE8D600DAC629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C933671F2FE8D600DAC629 /* AppYapo */;
+			targetProxy = 48C9337D1F2FE8D600DAC629 /* PBXContainerItemProxy */;
+		};
+		48C933891F2FE8D600DAC629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C933671F2FE8D600DAC629 /* AppYapo */;
+			targetProxy = 48C933881F2FE8D600DAC629 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48C9336F1F2FE8D600DAC629 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48C933701F2FE8D600DAC629 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48C933741F2FE8D600DAC629 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48C933751F2FE8D600DAC629 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48C9338E1F2FE8D600DAC629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48C9338F1F2FE8D600DAC629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48C933911F2FE8D600DAC629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppYapo",
+				);
+				INFOPLIST_FILE = AppYapo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppYapo/AppYapo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		48C933921F2FE8D600DAC629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppYapo",
+				);
+				INFOPLIST_FILE = AppYapo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppYapo/AppYapo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		48C933941F2FE8D600DAC629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				INFOPLIST_FILE = AppYapoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppYapo.app/AppYapo";
+			};
+			name = Debug;
+		};
+		48C933951F2FE8D600DAC629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				INFOPLIST_FILE = AppYapoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppYapo.app/AppYapo";
+			};
+			name = Release;
+		};
+		48C933971F2FE8D600DAC629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				INFOPLIST_FILE = AppYapoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AppYapo;
+			};
+			name = Debug;
+		};
+		48C933981F2FE8D600DAC629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M88MRTY7E4;
+				INFOPLIST_FILE = AppYapoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.iclaus.AppYapoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AppYapo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48C933631F2FE8D600DAC629 /* Build configuration list for PBXProject "AppYapo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C9338E1F2FE8D600DAC629 /* Debug */,
+				48C9338F1F2FE8D600DAC629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C933901F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C933911F2FE8D600DAC629 /* Debug */,
+				48C933921F2FE8D600DAC629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48C933931F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C933941F2FE8D600DAC629 /* Debug */,
+				48C933951F2FE8D600DAC629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		48C933961F2FE8D600DAC629 /* Build configuration list for PBXNativeTarget "AppYapoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C933971F2FE8D600DAC629 /* Debug */,
+				48C933981F2FE8D600DAC629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48C933601F2FE8D600DAC629 /* Project object */;
+}
