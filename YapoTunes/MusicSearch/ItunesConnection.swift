@@ -9,12 +9,14 @@
 import UIKit
 
 class ItunesConnection: NSObject {
-   
+    
     class func getAlbumForString(_ searchString:String, completionHandler:@escaping (Album)->()) {
 
         let escapedString = searchString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)
         
         let url = URL(string: "https://itunes.apple.com/search?term=\(escapedString!)&media=music")
+        
+        
         
         let task = URLSession.shared.dataTask(with: url!, completionHandler: { (data:Data!, response:URLResponse!, error:NSError!) -> Void in
             if error == nil {
@@ -23,6 +25,10 @@ class ItunesConnection: NSObject {
                 let itunesDict = jsonObject as! NSDictionary
                 
                 let resultsArray = itunesDict.object(forKey: "results") as! [Dictionary<String,AnyObject>]
+                
+                
+                
+                
                 
                 if resultsArray.count > 0 {
                     if let resultsDict = resultsArray.first {
@@ -33,9 +39,13 @@ class ItunesConnection: NSObject {
                         
                         let album = Album(title: albumTitle, artist: artist, genre: genre, artworkURL: artworkURL)
                         
-                        completionHandler(album)
-
+                        DispatchQueue.main.async {
+                            completionHandler(album)
+                        }
+                        
                     }
+
+                    
                 }
                 
                 
