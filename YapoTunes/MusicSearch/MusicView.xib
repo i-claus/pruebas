@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MusicView" customModule="MusicSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="20x-HE-QKm">
+                    <rect key="frame" x="38" y="29" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="qyM-0f-fIM"/>
+                        <constraint firstAttribute="width" constant="100" id="zBZ-ZJ-krz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h53-3A-zWV">
+                    <rect key="frame" x="167" y="52" width="406" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Fee-UH-1Cj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Artist:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBw-OP-Wdb">
+                    <rect key="frame" x="38" y="145" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCl-sC-umj">
+                    <rect key="frame" x="105" y="145" width="468" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwZ-RT-zJY">
+                    <rect key="frame" x="105" y="174" width="468" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Genre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSq-ex-OIG">
+                    <rect key="frame" x="38" y="174" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.9241861093" green="0.9241861093" blue="0.9241861093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uCl-sC-umj" secondAttribute="trailing" constant="27" id="0QC-qR-wSc"/>
+                <constraint firstItem="hwZ-RT-zJY" firstAttribute="leading" secondItem="oSq-ex-OIG" secondAttribute="trailing" constant="15" id="5o4-eS-1Fn"/>
+                <constraint firstItem="uCl-sC-umj" firstAttribute="leading" secondItem="cBw-OP-Wdb" secondAttribute="trailing" constant="22" id="Bub-y9-IgS"/>
+                <constraint firstItem="uCl-sC-umj" firstAttribute="top" secondItem="20x-HE-QKm" secondAttribute="bottom" constant="16" id="GFq-Hz-iMU"/>
+                <constraint firstItem="cBw-OP-Wdb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="J1U-iG-7n6"/>
+                <constraint firstItem="cBw-OP-Wdb" firstAttribute="top" secondItem="20x-HE-QKm" secondAttribute="bottom" constant="16" id="WXX-Ho-Cvc"/>
+                <constraint firstItem="oSq-ex-OIG" firstAttribute="top" secondItem="cBw-OP-Wdb" secondAttribute="bottom" constant="8" id="dOl-NK-oJg"/>
+                <constraint firstItem="uCl-sC-umj" firstAttribute="centerY" secondItem="cBw-OP-Wdb" secondAttribute="centerY" id="esR-ul-AVe"/>
+                <constraint firstItem="oSq-ex-OIG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="fZJ-Gr-XNC"/>
+                <constraint firstItem="h53-3A-zWV" firstAttribute="centerY" secondItem="20x-HE-QKm" secondAttribute="centerY" id="gY9-eB-GTq"/>
+                <constraint firstAttribute="trailing" secondItem="h53-3A-zWV" secondAttribute="trailing" constant="27" id="nLq-18-wiI"/>
+                <constraint firstItem="h53-3A-zWV" firstAttribute="leading" secondItem="20x-HE-QKm" secondAttribute="trailing" constant="29" id="oBV-0s-QJ1"/>
+                <constraint firstItem="20x-HE-QKm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="pS1-0d-xCv"/>
+                <constraint firstItem="20x-HE-QKm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="pyR-MK-5jy"/>
+                <constraint firstAttribute="trailing" secondItem="hwZ-RT-zJY" secondAttribute="trailing" constant="27" id="sIY-63-hjF"/>
+                <constraint firstItem="hwZ-RT-zJY" firstAttribute="centerY" secondItem="oSq-ex-OIG" secondAttribute="centerY" id="weY-9M-QXM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GFq-Hz-iMU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="artistLabel" destination="uCl-sC-umj" id="qdF-OV-d3B"/>
+                <outlet property="artworkImageView" destination="20x-HE-QKm" id="j28-mN-4QJ"/>
+                <outlet property="genreLabel" destination="hwZ-RT-zJY" id="aDU-cc-9N3"/>
+                <outlet property="titleLabel" destination="h53-3A-zWV" id="6x4-xM-t3y"/>
+            </connections>
+            <point key="canvasLocation" x="993" y="747"/>
+        </view>
+    </objects>
+</document>
